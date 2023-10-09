@@ -1,0 +1,38 @@
+#content{
+	width: 888px;
+}
+#imageright{
+	
+    width: 250px;
+    height: 300px;
+}
+#imageleft{
+    width: 250px;
+    height: 200px;
+}
+.kepszoveg{
+	text-align: center;
+    font-style: italic;
+    
+}
+a{
+    text-decoration: none;
+
+}
+
+.kepj{
+    border-radius: 16px;
+    border: 2px forestgreen solid;
+    float: right;
+    overflow: hidden;
+}
+
+.kepb{
+    border-radius: 16px;
+    border: 2px forestgreen solid;
+    float: left;
+    overflow: hidden;
+}
+.pad{
+    padding-right: 10px;
+}
