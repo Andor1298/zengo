@@ -1,67 +1,88 @@
-body{
+body {
     background-color: forestgreen;
 }
-#content{
-	width: 888px;
-    background-color: lightgoldenrodyellow;
+#content {
+    max-width: 888px;
+    width: 80%;
     margin: 0 auto;
+    background-color: lightgoldenrodyellow;
     border-radius: 16px;
 }
-#imageright{
-	
-    width: 250px;
-    height: 300px;
-    
+p, li {
+    text-align: justify;
 }
-#imageleft{
-    width: 250px;
-    height: 200px;
-    
+sub {
+    text-transform: none;
 }
-.kepszoveg{
-	text-align: center;
+#imageright, #imagerightala {
+    float: right;
+    max-width: 200px;
+    width: auto;
+    margin-left: 20px;
+    border: 1px solid forestgreen;
+    padding: 10px;
+    border-radius: 20px;
+}
+#imagerightala{
+    display: none;
+}
+#imageright img, #imagerightala img {
+    max-width: 100%;
+    width: auto;
+}
+
+#imageleft, #imageleftala{
+    float: left;
+    max-width: 300px;
+    width: auto;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    border: 1px solid forestgreen;
+    padding: 10px;
+    border-radius: 20px;
+}
+#imageleftala{
+    display: none;
+}
+
+#imageleft img, #imageleftala img {
+    max-width: 100%;
+    width: auto;
+}
+@media screen and (max-width: 600px) {
+    #imageright, #imageleft {
+        display: none;
+        float: none;
+        margin: 0 auto;
+    }
+
+    #imagerightala, #imageleftala {
+        display: block;
+        float: none;
+        margin: 0 auto;
+    }
+}
+.kepszoveg {
+    font-weight: bold;
     font-style: italic;
-    
-}
-@media screen and (max-width: 600px){
-    #imageright{
-        float: none;
-        margin: 0 auto;
-        width: 90%;
-    }
-    #imageleft{
-        float: none;
-        margin: 0 auto;
-        width: 90%;
-
-    }
-    #content{
-        width: fit-content;
-    }
+    text-align: center;
 }
 
-
-
-a{
+a {
     text-decoration: none;
-
+    color: blue;
 }
-a:hover{
+
+a:hover {
     color: red;
 }
 
-.kepj{
-    border-radius: 16px;
-    border: 2px forestgreen solid;
-    float: right;
-    overflow: hidden;
+h1, h2 {
+    text-transform: uppercase;
+    color: forestgreen;
 }
 
-.kepb{
-    border-radius: 16px;
-    border: 2px forestgreen solid;
-    float: left;
-    overflow: hidden;
-    margin-right: 18px;
-}
+
+
+
 
