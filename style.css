@@ -1,23 +1,47 @@
+body{
+    background-color: forestgreen;
+}
 #content{
 	width: 888px;
+    background-color: lightgoldenrodyellow;
+    margin: 0 auto;
+    border-radius: 16px;
 }
 #imageright{
 	
     width: 250px;
     height: 300px;
-    margin-left: 20px;
+    
 }
 #imageleft{
     width: 250px;
     height: 200px;
-    margin-right: 40px;
-    margin-bottom: 80px;
+    
 }
 .kepszoveg{
 	text-align: center;
     font-style: italic;
     
 }
+@media screen and (max-width: 600px){
+    #imageright{
+        float: none;
+        margin: 0 auto;
+        width: 90%;
+    }
+    #imageleft{
+        float: none;
+        margin: 0 auto;
+        width: 90%;
+
+    }
+    #content{
+        width: fit-content;
+    }
+}
+
+
+
 a{
     text-decoration: none;
 
@@ -38,5 +62,6 @@ a:hover{
     border: 2px forestgreen solid;
     float: left;
     overflow: hidden;
+    margin-right: 18px;
 }
 
